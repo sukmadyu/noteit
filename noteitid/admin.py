@@ -1,5 +1,5 @@
 from django.contrib import admin
-from noteitid.models import Comments
+from noteitid.models import Contact
 
 # Register your models here.
-admin.site.register(Comments)
+admin.site.register(Contact)

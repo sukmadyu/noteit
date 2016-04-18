@@ -1,0 +1,145 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: rgba(251, 46, 1, 0.81);
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #FB2E01;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: #272727;
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+header.nav {
+    box-shadow: 0 1px 6px rgba(0,0,0,.35);
+    width: 100%;
+    height: 15%;
+    top: 0px;
+    position: fixed;
+    z-index: 999;
+    -webkit-transition: top .5s;
+    transition: top .5s;
+}
+
+.root-sec {
+    position: relative;
+}
+
+@media only screen and (max-width : 487px) {
+  div #feature .container {
+    margin-top: 500px;
+  }
+}
+
+@media only screen and (max-height : 700px) {
+  div #feature .container {
+    margin-top: 900px;
+  }
+}
+
+.brightness img
+{
+	filter: brightness(50%);
+	-webkit-filter: brightness(50%);
+	-moz-filter: brightness(50%);
+	-o-filter: brightness(50%);
+	-ms-filter: brightness(50%);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 5px solid #FB2E01;
+    max-width: 100px;
+}
+
+i.small {
+    font-size: 2rem;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.white-text {
+    color: #FFFFFF !important;
+}
+
+i {
+    line-height: inherit;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.fa-behance-square:before {
+    content: "\f1b5";
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
