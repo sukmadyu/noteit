@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>NoteIT! - Everything You Need</title>
-
+{% load staticfiles %}
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -16,14 +16,14 @@
   <div class="navbar-fixed">
 	<nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><img src="img/Noteitlogo.png" style="width: 150px; margin-top: 13px;"></a>
+      <a id="logo-container" href="#" class="brand-logo"><img src={% static "img/Noteitlogo.png"%} style="width: 150px; margin-top: 13px;"></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#index-banner">Home</a></li>
         <li><a href="#feature">Feature</a></li>
         <li><a href="#products">Products</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-
+{%block navbar%}{%endblock%}
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#index-banner">Home</a></li>
         <li><a href="#feature">Feature</a></li>
@@ -129,7 +129,8 @@
 				<hr>
 			</div>
             <div class="col l6 s12">
-                <form class="col s12" action="contact.php" method="post">
+                <form class="col s12" action="{% url 'index'%}" method="post">
+					{% csrf_token %}
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="material-icons prefix white-text" style="margin-top: 10px;">account_circle</i>
@@ -176,8 +177,8 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <script src="{% static 'js/materialize.js'%}"></script>
+  <script src="{% static 'js/init.js'%}"></script>
   <!-- <script src="js/plugin-min.js"></script> -->
 
   </body>

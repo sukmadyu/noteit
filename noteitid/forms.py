@@ -6,7 +6,7 @@ class ContactForm(forms.ModelForm):
 		model = Contact
 		fields = ('name','email','message',)
 		widgets = {
-			'name': forms.TextInput(attrs={'type':'text','class':'form-control','placeholder':'Your Name *','data-validation-required-message':'Please enter your name.'}),
-			'email': forms.EmailInput(attrs={'type':'text','class':'form-control','placeholder':'Your Email *','data-validation-required-message':'Please enter your email.'}),
-			'message': forms.Textarea(attrs={'type':'text','class':'form-control','placeholder':'Your Message *','data-validation-required-message':'Please enter your message.'}),
+			'nama': forms.TextInput(attrs={'id':'icon_prefix','type':'text','class':'validate white-text','placeholder':'Your Name *','data-validation-required-message':'Please enter your name.'}),
+			'email': forms.EmailInput(attrs={'id':'icon_email','type':'text','class':'validate white-text','placeholder':'Your Email *','data-validation-required-message':'Please enter your email.'}),
+			'pesan': forms.Textarea(attrs={'id':'icon_prefix2','type':'text','class':'materialize-textarea white-text','style':'height: 85px;','placeholder':'Your Message *','data-validation-required-message':'Please enter your message.'}),
 			}
